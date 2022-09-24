@@ -1,0 +1,228 @@
+html {
+  font-family: 'Cairo', sans-serif;
+  color: aliceblue;
+} 
+@media (min-width: 0px) and (max-width: 2000px) {
+  body {
+    background-size: cover;
+    background-image: url("5343962-window-wet-open-window-glass-rain-weather-dark-night-evening-building-architecture-city-urban-looking-through-empire-state-building-new-york-city-nyc-creative-commons-images.jpg");
+  } 
+}
+body {
+  background-image: url("5343962-window-wet-open-window-glass-rain-weather-dark-night-evening-building-architecture-city-urban-looking-through-empire-state-building-new-york-city-nyc-creative-commons-images.jpg") ;
+  /* background-size: cover; */
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #00000052;
+}
+.header h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.header span {
+  color: #ec2758;
+}
+.header p  {
+  font-size: 10px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 110px;
+  top: 35px;
+
+}
+nav {
+  width: 550px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  left: 720px;
+  top: 25px;
+}
+nav li {
+  max-width: 90px;
+  display: inline;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav .home {
+  color: #ec2758;
+}
+nav .login {
+  position: relative;
+}
+nav .login::after {
+  content: "";
+  width: 90px;
+  height: 55px;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;
+  left: -19px;
+  top: -10px;
+  background-color:#ec2758
+}
+.main h2 {
+  position: absolute;
+  top: 150px;
+  left: 90px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  z-index: -1;
+}
+.main span {
+  color:  #eb5924;
+}
+.main p {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+  word-break: keep-all;
+}
+.main .become {
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #ec2758;
+  color: aliceblue;
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  top: 370px;
+  left: 130px;
+}
+.main .learn {
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #ec2758;
+  color: aliceblue;
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  top: 370px;
+  left: 400px;
+}
+.loginbox {
+  width: 400px;
+  height: 380px;
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  left: 880px;
+  background-color: #0000009a;
+}
+.loginbox .ds {
+  position: absolute;
+  top: 100px;
+  left: 22px;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+.loginbox .password {
+  position: absolute;
+  top: 150px;
+  left: 22px;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+.loginbox .confirmpassword {
+  position: absolute;
+  top: 200px;
+  left: 22px;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+.loginbox .submit {
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #ec2758;
+  color: aliceblue;
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  top: 260px;
+  left: 85px;
+}
+input[type*="password"]::placeholder {
+  color: #eb5924;
+}
+.loginbox::after {
+  content: "login";
+  color: #ec2758;
+  text-transform: uppercase;
+  position: absolute;
+  top: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  left: 165px;
+  letter-spacing: 1.5px;
+}
+.loginbox .twitter {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(108, 162, 223);
+  color: white;
+  position: absolute;
+  top: 320px;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginbox .facebook {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3B5998;
+  color: white;
+  position: absolute;
+  top: 320px;
+  left: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginbox .googleplus {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f31c38;
+  color: white;
+  position: absolute;
+  top: 320px;
+  left: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
