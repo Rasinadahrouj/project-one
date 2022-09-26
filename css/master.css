@@ -1,65 +1,62 @@
-html {
+* {
   font-family: 'Cairo', sans-serif;
   color: aliceblue;
-} 
-@media (min-width: 0px) and (max-width: 2000px) {
-  body {
-    background-size: cover;
-    background-image: url("5343962-window-wet-open-window-glass-rain-weather-dark-night-evening-building-architecture-city-urban-looking-through-empire-state-building-new-york-city-nyc-creative-commons-images.jpg");
-  } 
-}
-body {
-  background-image: url("5343962-window-wet-open-window-glass-rain-weather-dark-night-evening-building-architecture-city-urban-looking-through-empire-state-building-new-york-city-nyc-creative-commons-images.jpg") ;
-  /* background-size: cover; */
   box-sizing: border-box;
   font-size: 20px;
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  background-image: url("5343962-window-wet-open-window-glass-rain-weather-dark-night-evening-building-architecture-city-urban-looking-through-empire-state-building-new-york-city-nyc-creative-commons-images.jpg") ;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.container {
+
+nav  .logoname h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+nav .logoname span {
+  color: #ec2758;
+}
+nav  .logoname p  {
+  font-size: 10px;
+  text-transform: capitalize;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 80px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10;
+  padding-left: 5%;
+  padding-right: 5%;
   width: 100%;
   height: 80px;
   background-color: #00000052;
 }
-.header h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
-.header span {
-  color: #ec2758;
-}
-.header p  {
-  font-size: 10px;
-  text-transform: uppercase;
-  position: absolute;
-  left: 110px;
-  top: 35px;
-
-}
-nav {
-  width: 550px;
+nav ul {
+  list-style-type: none;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  position: absolute;
-  z-index: 1;
-  left: 720px;
-  top: 25px;
 }
-nav li {
-  max-width: 90px;
+nav li a {
   display: inline;
   color: aliceblue;
+  margin-right: 35px;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
 }
-nav .home {
+nav ul .home a {
   color: #ec2758;
 }
 nav .login {
@@ -72,10 +69,52 @@ nav .login::after {
   border-radius: 25px;
   position: absolute;
   z-index: -1;
-  left: -19px;
-  top: -10px;
-  background-color:#ec2758
+  left: -21px;
+  top: -8px;
+  background-color: #ec2758;
 }
+@media screen and (max-width: 668px) {
+  nav {
+    display: block;
+    height: 300px;
+  }
+  .logoname {
+    display: block;
+    margin-left: 30%;
+  }
+  nav  .logoname p  {
+    position: absolute;
+    top: 25px;
+    left: 145px;
+  } 
+  nav ul {
+    display: block;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+  }
+  nav ul li  {
+    display: block;
+    width: 50%;
+  }
+  nav .login::after { 
+    background-color: transparent;
+  }
+  nav ul li a::before {
+    content: "";
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #ec2758;
+    position: absolute;
+    z-index: -2;
+  }
+  .main {
+    display: block;
+  }
+}
+
+
 .main h2 {
   position: absolute;
   top: 150px;
@@ -87,6 +126,7 @@ nav .login::after {
   z-index: -1;
 }
 .main span {
+  font-size: 40px;
   color:  #eb5924;
 }
 .main p {
